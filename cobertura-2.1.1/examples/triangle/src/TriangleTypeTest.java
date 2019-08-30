@@ -34,16 +34,14 @@ public class TriangleTypeTest {
         list.add(new Object[] {4, 2, 2, Triangle.INVALID});
         list.add(new Object[] {3, 2, 2, Triangle.ISOSCELES});
         // uncomment the line below out to add in an additional test case
-	// list.add(new Object[] {2, 2, 3, Triangle.ISOSCELES});
+	      list.add(new Object[] {2, 2, 3, Triangle.ISOSCELES});
         list.add(new Object[] {2, 2, 2, Triangle.EQUILATERAL});
         list.add(new Object[] {2, 3, 4, Triangle.SCALENE});
         list.add(new Object[] {4, 3, 2, Triangle.SCALENE});
         return list;
     }
 
-   @Test public void triangleTest() { 
-      assertEquals(TriangleType.triangle(x, y, z), t); 
+   @Test public void triangleTest() {
+      assertEquals(TriangleType.triangle(x, y, z), t);
    }
 }
-
-
